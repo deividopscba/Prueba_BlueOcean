@@ -8,10 +8,5 @@ pipeline {
         }
 
     }
-    post {
-        always {
-            echo 'Pipeline completed with exit'
-        }
-    }
 
 }	
