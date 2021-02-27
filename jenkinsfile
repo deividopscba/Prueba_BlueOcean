@@ -1,12 +1,12 @@
 pipeline {
-  agent any
-  stages {
-   stage('Build') {
-      steps {
-         echo 'Creando imágen...'
-      }   
-   }
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                    echo 'Creando imágen nueva...'
+            }   
+        }
 
-  }
+    }
 
 }	
