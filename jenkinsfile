@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Build Completed'
+            }
+        }
+
+    }
+    post {
+        always {
+            echo 'Pipeline completed with exit'
+        }
+    }
+
+		
