@@ -16,7 +16,7 @@ pipeline {
     }
 
     environment {
-		imageNameApp = 'deividopscba/alimentos-webapi'
+		imageNameApp = 'deividopscba/sigal-webapi'
     }
 
 }	
