@@ -6,7 +6,7 @@ pipeline {
 				stage('Web Api') {
 					steps {
 						script {
-							dockerInstanceApp = sudo docker.build(imageNameApp, "-f ./alimentos-webapi/Dockerfile ./alimentos-webapi")
+							dockerInstanceApp = sudo docker.build(imageNameApp, "--build -f ./alimentos-webapi/Dockerfile ./alimentos-webapi")
 						}
 					}
 				}
