@@ -2,8 +2,7 @@ pipeline {
     agent any
     stages {
         stage('Build') {
-            stage('Web App') {
-					parallel {
+			parallel {
 				stage('Web App') {
 					steps {
 						script {
