@@ -3,15 +3,22 @@ pipeline {
     stages {
         stage('Build') {
             stage('Web App') {
+					parallel {
+				stage('Web App') {
 					steps {
 						script {
 							dockerInstanceApp = docker.build(imageNameApp, "./alimentos-webapp/Dockerfile ./alimentos-webapp")
 						}
 					}
 				}
+            }            
         }
 
     }
+
+environment {
+		imageNameApi = 'deividopscba/alimentos-webapp'
+}
 
 }	
 
